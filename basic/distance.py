@@ -36,7 +36,7 @@ def dis_chebyshev(A, B):
     for i in xrange(length):
         tmp.append(math.fabs(A[i]-B[i]))
     tmp.sort()
-    return tmp[-1]
+    return tmp[-1] if len(tmp)!=0 else -1
 
 if __name__ == "__main__":
     print dis_manhattan([1,2,3],[4,5,6])
